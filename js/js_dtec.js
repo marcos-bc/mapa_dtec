@@ -10,7 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   // 2. Dimensões virtuais da planta DO EVENTO (Ex: 1920x1080)
-  var w = 900, h = 1200;
+  
+  // w = 900, h = 1200;
+  // w = 1228, h = 869;
+  
+  var w = 1228, h = 869;
   var bounds = [[0, 0], [h, w]];
 
   // ATENÇÃO: para mudar a imagem do "mapa" é só colocar o caminho dentro das aspas: L.imageOverlay('...', bounds)
