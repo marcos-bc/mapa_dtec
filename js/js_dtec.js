@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // 1. Inicializar o mapa na div #mapa-interativo (coordenadas de imagem)
   var map = L.map('mapa-interativo', {
     crs: L.CRS.Simple,
-    minZoom: -3,
+    minZoom: -2,
     maxZoom: 3,
     zoomControl: true,
     attributionControl: false
