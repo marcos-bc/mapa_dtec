@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // ATENÇÃO: para mudar a imagem do "mapa" é só colocar o caminho dentro das aspas: L.imageOverlay('...', bounds)
   // Exemplo: 'planta-oficial-dtec.png'
 
-  var image = L.imageOverlay('src/mapa_seara_tematico.png', bounds).addTo(map);
+  var image = L.imageOverlay('src/mapa_final_Dtec_cópia.png', bounds).addTo(map);
   map.fitBounds(bounds);
 
 
@@ -70,46 +70,6 @@ document.addEventListener("DOMContentLoaded", function() {
   //    map.addLayer(auditoriosGroup);
    // }
  // };
-
- 
-
-  // Adicionar um circulo de acordo com certa coordenada
-  var postoMedico = L.circleMarker([372, 674], {
-  radius: 8,            // tamanho do circulo (recomendo 5, 8, 10...)
-  color: '#FFFFFF',     // Cor da borda do círculo
-  weight: 2,            // Grossura da borda
-  fillColor: '#E854C9', // Cor de preenchimento 
-  fillOpacity: 0.5        // Opacidade (1 é sólido, 0.5 é meio transparente)
-  }).addTo(map);
-  postoMedico.bindPopup("<b>FADA</b>");
-
-
-  var postoMedico = L.circleMarker([104, 491], {
-  radius: 8,            // tamanho do circulo (recomendo 5, 8, 10...)
-  color: '#FFFFFF',     // Cor da borda do círculo
-  weight: 2,            // Grossura da borda
-  fillColor: '#E854C9', // Cor de preenchimento 
-  fillOpacity: 0.5        // Opacidade (1 é sólido, 0.5 é meio transparente)
-  }).addTo(map);
-  postoMedico.bindPopup("<b>PALCO</b>");
-
-  var postoMedico = L.circleMarker([302, 731], {
-  radius: 8,            // tamanho do circulo (recomendo 5, 8, 10...)
-  color: '#FFFFFF',     // Cor da borda do círculo
-  weight: 2,            // Grossura da borda
-  fillColor: '#E854C9', // Cor de preenchimento 
-  fillOpacity: 0.5        // Opacidade (1 é sólido, 0.5 é meio transparente)
-  }).addTo(map);
-  postoMedico.bindPopup("<b>ZUMBI</b>");
-
-  var postoMedico = L.circleMarker([87, 608], {
-  radius: 8,            // tamanho do circulo (recomendo 5, 8, 10...)
-  color: '#FFFFFF',     // Cor da borda do círculo
-  weight: 2,            // Grossura da borda
-  fillColor: '#E854C9', // Cor de preenchimento 
-  fillOpacity: 0.5        // Opacidade (1 é sólido, 0.5 é meio transparente)
-  }).addTo(map);
-  postoMedico.bindPopup("<b>INSCRIÇÕES</b>");
 
 
 
