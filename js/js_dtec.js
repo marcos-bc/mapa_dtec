@@ -3,14 +3,14 @@ document.addEventListener("DOMContentLoaded", function() {
   // 1. Inicializar o mapa na div #mapa-interativo (coordenadas de imagem)
   var map = L.map('mapa-interativo', {
     crs: L.CRS.Simple,
-    minZoom: -3,
+    minZoom: -4,
     maxZoom: 3,
     zoomControl: true,
     attributionControl: false
   });
 
   // 2. Dimensões virtuais da planta DO EVENTO (Ex: 1920x1080)
-  var w = 1228, h = 869;
+  var w = 900, h = 1200;
   var bounds = [[0, 0], [h, w]];
 
   // ATENÇÃO: para mudar a imagem do "mapa" é só colocar o caminho dentro das aspas: L.imageOverlay('...', bounds)
