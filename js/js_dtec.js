@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // w = 900, h = 1200;
   // w = 1228, h = 869;
   
-  var w = 1228, h = 869;
+  var w = 869, h = 1228;
   var bounds = [[0, 0], [h, w]];
 
   // ATENÇÃO: para mudar a imagem do "mapa" é só colocar o caminho dentro das aspas: L.imageOverlay('...', bounds)
