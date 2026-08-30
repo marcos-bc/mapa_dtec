@@ -219,9 +219,10 @@ body {
 
 .prog-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Alinha os elementos pelo topo para textos longos */
   padding: 18px;
   border-bottom: 1px solid rgba(123, 47, 247, 0.3);
+  gap: 16px; /* Força um espaçamento uniforme entre o horário e o texto */
 }
 
 .prog-item:last-child {
@@ -230,15 +231,21 @@ body {
 
 .prog-hora {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px; /* Tamanho ajustado para evitar quebra de linha no mobile */
   color: #E854C9;
-  min-width: 80px;
+  min-width: 135px; /* Largura expandida para acomodar "08h00 - 12h00" */
+  flex-shrink: 0; /* Impede que a coluna do horário seja espremida */
+}
+
+.prog-info {
+  flex: 1; /* Faz os títulos e descrições ocuparem o espaço exato restante */
 }
 
 .prog-info strong {
   font-size: 16px;
   color: #FFFFFF;
   display: block;
+  line-height: 1.4;
 }
 
 .prog-info p {
@@ -246,7 +253,6 @@ body {
   color: #A0A0A0;
   margin-top: 4px;
 }
-
 
 
 
