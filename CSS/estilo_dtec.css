@@ -219,10 +219,10 @@ body {
 
 .prog-item {
   display: flex;
-  align-items: flex-start; /* Alinha os elementos pelo topo para textos longos */
-  padding: 18px;
+  align-items: flex-start;
+  padding: 16px 12px; /* Reduzi as margens internas para ganhar espaço útil na tela */
   border-bottom: 1px solid rgba(123, 47, 247, 0.3);
-  gap: 16px; /* Força um espaçamento uniforme entre o horário e o texto */
+  gap: 12px; /* Reduzi o espaço vazio entre a hora e o texto */
 }
 
 .prog-item:last-child {
@@ -231,25 +231,27 @@ body {
 
 .prog-hora {
   font-weight: 700;
-  font-size: 16px; /* Tamanho ajustado para evitar quebra de linha no mobile */
+  font-size: 13.5px; /* Fonte ligeiramente menor para o horário */
   color: #E854C9;
-  min-width: 135px; /* Largura expandida para acomodar "08h00 - 12h00" */
-  flex-shrink: 0; /* Impede que a coluna do horário seja espremida */
+  min-width: 100px; /* Reduzi drasticamente a largura da coluna de horário */
+  flex-shrink: 0;
 }
 
 .prog-info {
-  flex: 1; /* Faz os títulos e descrições ocuparem o espaço exato restante */
+  flex: 1; /* Garante que o texto ocupe todo o resto do espaço disponível */
+  min-width: 0; /* ESSENCIAL: Impede que o texto "quebre" o card e vaze para fora da tela */
+  word-wrap: break-word; /* Força palavras longas a quebrarem de linha se necessário */
 }
 
 .prog-info strong {
-  font-size: 16px;
+  font-size: 15px; /* Fonte ajustada para melhor leitura no mobile */
   color: #FFFFFF;
   display: block;
   line-height: 1.4;
 }
 
 .prog-info p {
-  font-size: 14px;
+  font-size: 13.5px;
   color: #A0A0A0;
   margin-top: 4px;
 }
